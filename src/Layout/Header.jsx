@@ -1,13 +1,13 @@
 import logo from "../images/react.png";
 
-function Header() {
+const Header = () => {
   return (
     <>
       <MainHeader />
       <SubHeader />
     </>
   );
-}
+};
 function MainHeader() {
   return (
     <div className="pt-3 pl-2" style={{ backgroundColor: "black" }}>
@@ -24,7 +24,6 @@ const subHeaderStyle = {
   color: "blueviolet",
   backgroundColor: "lightgray",
 };
-const totalLecture = 3;
 function SubHeader() {
   return (
     <h2 style={subHeaderStyle} className="text-center">

@@ -1,6 +1,7 @@
-import Student from "./Student";
+import Student from "./Components/Student/Student";
+import StudentReview from "./Components/Student/StudentReview";
 
-export default function MainBody() {
+const MainBody = () => {
   return (
     <div>
       <p> Learning about rendering</p>
@@ -16,12 +17,16 @@ export default function MainBody() {
           experience={2}
           name="Zdroba Darius"
           headshot="https://api.lorem.space/image/calendar?w=150&h=150"
-        />
+        >
+          <StudentReview />
+        </Student>
         <Student
           experience={7}
           name="Marc Opolo"
           headshot="https://api.lorem.space/image/calendar?w=150&h=144"
-        />
+        >
+          <StudentReview />
+        </Student>
         <Student
           experience={5}
           name="Marcus Demetrius"
@@ -30,4 +35,5 @@ export default function MainBody() {
       </div>
     </div>
   );
-}
+};
+export default MainBody;

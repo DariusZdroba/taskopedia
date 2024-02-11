@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () => {
   return (
     <footer
       className="py-3"
@@ -13,3 +13,4 @@ export default function Footer() {
     </footer>
   );
 }
+export default Footer
